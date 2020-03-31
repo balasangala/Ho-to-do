@@ -11,27 +11,48 @@
 
 <input type="text" id="myText" onkeyup="myFunc()">
 
-<ul id="mylist">
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Cake</li>
-    <li>mns</li>
-</ul>
+<table id="mylist">
+    <tr>
+        <td>Apple</td>
+        <td>Banana</td>
+        <td>cake</td>
+        <td>something</td>
+    </tr>
+    <tr>
+        <td>air</td>
+        <td>water</td>
+        <td>fire</td>
+        <td>something</td>
+    </tr>
+    <tr>
+        <td>netflix</td>
+        <td>prime</td>
+        <td>hotstar</td>
+        <td>sunxt</td>
+    </tr>
+    
+</table>
 
 <script>
+
     function myFunc(){
     var input = document.getElementById('myText');
-    var filter = input.value.toUpperCase();
-    var list = document.getElementById('mylist');
-    var li = list.getElementsByTagName('li');
+    var filter = input.value.toUpperCase().split(" ");
+    var table = document.getElementById('mylist');
+    var tr = table.getElementsByTagName('tr');
     var i;
-    for(i = 0; i<li.length; i++){
-        
-    if (li[i].innerHTML.toUpperCase().split("").some(x => filter.includes(x))){
-    li[i].style.display = "";
-    }else{
-    li[i].style.display = "none";
-            }
+  
+        for(i = 0; i<tr.length; i++){
+            for(var f = 0; f < filter.length; f++) {
+            
+                if (tr[i].innerHTML.toUpperCase().indexOf(filter[f]) > -1 ) {    
+                    tr[i].style.display = '';
+                    break;
+                } else {
+                    tr[i].style.display = 'none';
+                }
+             
+            }      
         }
     }
 </script>

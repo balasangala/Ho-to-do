@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .leftClass{
+        width: 18%;
+        border-right:1px solid green;
+        float: left;
+        height: 500px;
+        }
+    .rightClass{
+        width: 22%;
+        border-left:1px solid #000;
+        float: right;
+        height: 100%;
+        /* background-color:yellow; */
+    }
+    .middleClass{
+        width: 55%;
+        /* border:1px solid blue; */
+        height: 500px;
+        float:left;
+        /* //background-color:purple !important; */
+    }
+    .superClass{
+        width: 100%;
+        border:1px solid red;
+    }
+    ul li{list-style:none;}
+    #map {
+            bottom: 0px;
+            height:500px;
+            left: 0px;
+            right: 0px;
+            border-radius:15px !important;
+            margin-left:3% !important;
+            margin-right:3% !important;
+             
+        }
+        #map img[role=presentation] {
+  width:257px !important;
+  height: 257px !important;
+}
+ 
+       /* .gm-style-iw.gm-style-iw-c{ min-width:200px !important;}*/
+        .metroClass{list-style: none;font-weight:bold;line-height:150%;color:#FF0000;cursor: pointer;}
+                    .metroLiHeaderClass{color:#B2B2B4;border-bottom:1px solid #B2B2B4;width:10%;}
+                    .metroFill{color:#FF0000;}
+                    .metroNotFill{color:#B2B2B4;}
+                    .my-custom-class-for-label {
+  width: 50px; 
+  height: 20px;
+
+  border: 1px solid #eb3a44;
+  border-radius: 5px;
+  background: #fee1d7;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #eb3a44;
+}
+
+.leftClass{
+        width: 18%;
+        border-right:1px solid green;
+        float: left;
+        height: 500px;
+        }
+    .rightClass{
+        width: 22%;
+        border-left:1px solid #000;
+        float: right;
+        height: 100%;
+        /* background-color:yellow; */
+    }
+    .middleClass{
+        width: 55%;
+        /* border:1px solid blue; */
+        height: 500px;
+        float:left;
+        /* //background-color:purple !important; */
+    }
+    .superClass{
+        width: 100%;
+        border:1px solid red;
+    }
+
+.gm-style-iw.gm-style-iw-c{ min-width: 0 !important; opacity:0;}
+        
+.gm-style-iw.gm-style-iw-c.myClass{ min-width:200px !important;top:206px;}
+		.gm-style-iw.gm-style-iw-c.myClassOne{ max-width:200px !important;max-height:200px !important;top: 90px !important;left: 118px !important;}
+		.gm-style-iw.gm-style-iw-c.myClassTwo{ max-width:200px !important;max-height:200px !important;top: 90px !important;left: -119px !important;}
+        .metroClass{list-style: none;font-weight:bold;line-height:150%;color:#FF0000;cursor: pointer;}
+        .metroLiHeaderClass{color:#B2B2B4;border-bottom:1px solid #B2B2B4;width:10%;}
+                    .metroFill{color:#FF0000;}
+                    .metroNotFill{color:#B2B2B4;}
+                    .my-custom-class-for-label {
+  width: 50px; 
+  height: 20px;
+
+  border: 1px solid #eb3a44;
+  border-radius: 5px;
+  background: #fee1d7;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #eb3a44;
+}
+
+.gm-style-iw.gm-style-iw-c.seatlleClass{ min-width:200px !important;max-height:90px !important; top:100px !important; left:100px !important;}
+.gm-style-iw.gm-style-iw-c.chicagoClass{display:none; max-width:200px !important;max-height:200px !important;top: 170px !important;left: -119px !important;}
+.gm-style-iw.gm-style-iw-c.seattleClass{ display:none;min-width:180px !important;top:179px !important;left:133px !important; }
+.gm-style-iw.gm-style-iw-c.siliconValley{display:none; max-width:200px !important;max-height:200px !important;top: 51px !important;left: 118px !important;}
+.gm-style-iw.gm-style-iw-c.bostanClass{display:none; max-width:200px !important;max-height:200px !important;top: 90px !important;left: -119px !important;}
+.gm-style-iw.gm-style-iw-c.newyorkClass{display:none; max-width:200px !important;max-height:200px !important;top: 118px !important;left: -119px !important;}
+.gm-style-iw.gm-style-iw-c.PhiladelphiaClass{display:none; max-width:200px !important;max-height:200px !important;top: 75px !important;left: -119px !important;}
+.gm-style-iw.gm-style-iw-c.WashingtonClass{display:none; max-width:200px !important;max-height:200px !important;top: 118px !important;left: -119px !important;}
+.gm-style-iw.gm-style-iw-c.CulpeperClass{display:none; max-width:200px !important;max-height:200px !important;top: 75px !important;left: -119px !important;}
+.gm-style-iw.gm-style-iw-c.MiamiClass{display:none; max-width:200px !important;max-height:200px !important;top: 35px !important;left: -119px !important;}
+    </style>
+    <style>
+        ul.indication_list {
+            list-style-type: none;
+        }
+        ul.indication_list li label {
+            font-size: 14px;
+            color: #a1a1a4;
+            font-weight: 500;
+            vertical-align: middle;
+            margin-top: 2px;
+        }
+        .indicator {
+            width: 15px;
+            height: 15px;
+            background: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        label.indicator.active_l {
+            background: #f60808;
+        }
+
+/*       .gm-style .gm-style-iw-t::after{ opacity: 0;}*/
+
+.gm-style .gm-style-iw-t::after{
+    visibility: hidden;
+}
+            </style>
+</head>
+<body>
+    <div class="superClass">
+        <div class="leftClass">
+            <ul class="cspulcls"><li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="cSBoolean" value="AWS"><img src="https://ankuraggarwalcotest1.bigmachines.com/bmfsweb/ankuraggarwalcotest1/image/images/ibx_aws.png" alt=""><span class="checkmark"></span></label></li><li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="cSBoolean" value="Google"><img src="https://ankuraggarwalcotest1.bigmachines.com/bmfsweb/ankuraggarwalcotest1/image/images/ibx_google.png" alt=""><span class="checkmark"></span></label></li><li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="cSBoolean" value="Microsoft"><img src="https://ankuraggarwalcotest1.bigmachines.com/bmfsweb/ankuraggarwalcotest1/image/images/ibx_microsoft.png" alt=""><span class="checkmark"></span></label></li><li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="cSBoolean" value="Oracle"><img src="https://ankuraggarwalcotest1.bigmachines.com/bmfsweb/ankuraggarwalcotest1/image/images/ibx_oracle.png" alt=""><span class="checkmark"></span></label></li></ul>
+            <hr>
+<ul class="cspulcls">
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="AT&T Business">AT&T Business<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="BT">BT<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="China Telecom">China Telecom<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="COLT TECHNOLOGY SERVICES">COLT TECHNOLOGY SERVICES<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="NTT Communications">NTT Communications<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="Orange Business Services">Orange Business Services<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="TATA COMMUNICATIONS LIMITED">TATA COMMUNICATIONS LIMITED<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="Telefonica Business Solutions">Telefonica Business Solutions<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="Telstra">Telstra<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="Telxius">Telxius<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="Vodafone Carrier Services">Vodafone Carrier Services<span class="checkmark"></span></label></li>
+<li><label class="cb-container"><input onclick="initialize()" type="checkbox" name="nPBoolean" value="Verizon">Verizon<span class="checkmark"></span></label></li>
+</ul>
+        </div>
+        <div class="middleClass">
+            <ul class="indication_list">
+                <li>
+                  <label class="indicator active_l"></label> <label>Red Pins : Selected providers available</label>
+                </li>
+                <li>
+                  <label class="indicator"></label> <label>Gray Pins : Some or all selected providers  unavailable</label>
+                </li>
+              </ul>
+            <div id='map'>&nbsp;</div>
+        </div>
+        <div class="rightClass">
+            <div id="dispMetroJS"></div>
+        </div>
+    </div>
+    <input type="text" id="lastMetroSelection">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/geocodezip/geoxml3@master/polys/geoxml3.js'></script>
+<script type='text/javascript'  src='https://maps.googleapis.com/maps/api/js?libraries=drawing,geometry&amp;key=AIzaSyBqepHj5h7J2HUI-KfpbKFjmYV8jyzdKZk&amp;v=3&amp;callback=metroInitialize' defer='defer'></script>
+<script>countryResult=[{curBaseUrl:'https://equinixinctest2.bigmachines.com/bmfsweb/equinixinctest2/image/',countryImage:'https://equinixinctest2.bigmachines.com/bmfsweb/equinixinctest2/image/images/UnitedStates.PNG',countryName:'United State',centerdetails: {lat:39,lng:-95},countryCode:'United States',countryZoom:4}];</script>
+    <script>
+        locations =     [{dataSheetLink:'https://cloud.kapostcontent.net/pub/cff464e3-aa70-48ab-85f1-b9c20d210e51/atlanta-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/atlanta-data-centers/index/',labelPosition:'',title:'Atlanta',location: {lat:33.693968,lng:-84.384908},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'GOOGLE,Microsoft,VERIZON',maintitle:'Atlanta',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, China Telecom, Orange Business Services',selectedMetro:'',metroCode:'AT'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/6511209d-39e0-47de-9f54-c55cb489a0b3/boston-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/boston-data-centers/index/',labelPosition:'',title:'Boston',location: {lat:42.360459,lng:-71.058831},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'',maintitle:'Boston',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business,Verizon',selectedMetro:'',metroCode:'BO'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/49116f5c-7509-4b73-ae8d-53b384953da5/chicago-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/chicago-data-centers/index/',labelPosition:'',title:'Chicago',location: {lat:41.851808,lng:-88.123385},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,VERIZON',maintitle:'Chicago',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, BT, Telefonica Business Solutions',selectedMetro:'',metroCode:'CH'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/c0776e0c-4942-44c0-9fb2-3f570eba48fd/culpeper-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/culpeper-data-centers/index/',labelPosition:'',title:'Culpeper',location: {lat:37.059543,lng:-80.133897},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'',maintitle:'Culpeper',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, TELXIUS',selectedMetro:'',metroCode:'CU'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/e3a84e1f-e118-434d-8c04-6fddeb44f1d9/dallas-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/dallas-data-centers/index/',labelPosition:'',title:'Dallas',location: {lat:32.77613,lng:-96.795446},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,VERIZON',maintitle:'Dallas',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, COLT TECHNOLOGY SERVICES, TATA COMMUNICATIONS LIMITED, BT, TELXIUS',selectedMetro:'',metroCode:'DA'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/accbd142-e3fa-44a5-b6af-4bccff8d50b4/denver-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/denver-data-centers/index/',labelPosition:'',title:'Denver',location: {lat:39.74103,lng:-105.009611},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'VERIZON',maintitle:'Denver',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, Orange Business Services',selectedMetro:'',metroCode:'DE'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/82d73e8e-d106-420c-babe-9d4893efa92f/houston-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/houston-data-centers/index/',labelPosition:'',title:'Houston',location: {lat:29.76286,lng:-95.357499},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'',maintitle:'Houston',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon',selectedMetro:'',metroCode:'HO'},{dataSheetLink:'',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/los-angeles-data-centers/index/',labelPosition:'',title:'Los Angeles',location: {lat:33.926798,lng:-118.394518},icon:'',description:'AWS,GOOGLE,Microsoft,ORACLE,SAP,VERIZON',maintitle:'Los Angeles',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, COLT TECHNOLOGY SERVICES',selectedMetro:'',metroCode:'LA'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/68f2650f-4253-4ed9-b615-1353ea091c47/miami-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/miami-data-centers/index/',labelPosition:'',title:'Miami',location: {lat:25.763187,lng:-80.197884},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,VERIZON',maintitle:'Miami',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, COLT TECHNOLOGY SERVICES, TATA COMMUNICATIONS LIMITED, BT, Telefonica Business Solutions, TELXIUS',selectedMetro:'',metroCode:'MI'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/05ddb06b-e269-45f7-997f-2a5d329e10c9/new-york-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/new-york-data-centers/index/',labelPosition:'',title:'New York',location: {lat:40.709428,lng:-74.035961},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,VERIZON',maintitle:'New York',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, COLT TECHNOLOGY SERVICES, TATA COMMUNICATIONS LIMITED, BT, Telstra',selectedMetro:'',metroCode:'NY'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/f2487282-6452-4ca5-9c60-94f136cdf8b0/philadelphia-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/philadelphia-data-centers/index/',labelPosition:'left',title:'Philadelphia',location: {lat:39.48171,lng:-75.463115},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'',maintitle:'Philadelphia',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon',selectedMetro:'',metroCode:'PH'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/ef898eb1-7d5f-43b0-b11b-993f57f6c440/seattle-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/seattle-data-centers/index/',labelPosition:'right',title:'Seattle',location: {lat:47.607754,lng:-122.332465},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,VERIZON',maintitle:'Seattle',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, Orange Business Services, COLT TECHNOLOGY SERVICES, TATA COMMUNICATIONS LIMITED',selectedMetro:'',metroCode:'SE'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/8dbc7ab9-5fcc-41fc-ad00-317f5bc5ff29/silicon-valley-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/silicon-valley-data-centers/index/',labelPosition:'',title:'Silicon Valley',location: {lat:37.368619,lng:-122.030433},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,SAP,VERIZON',maintitle:'Silicon Valley',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, COLT TECHNOLOGY SERVICES, TATA COMMUNICATIONS LIMITED, NTT Communications, BT, TELXIUS, Telstra',selectedMetro:'',metroCode:'SV'},{dataSheetLink:'https://cloud.kapostcontent.net/pub/1b0fefb3-34ee-4736-ae7e-46f57c6af2e5/washington-dc-metro-data-sheet',metroSheetLink:'https://www.equinix.com/locations/americas-colocation/united-states-colocation/washington-dc-data-centers/index/',labelPosition:'',title:'Washington, D.C.',location: {lat:38.43746,lng:-78.673228},icon:'https://equinixinctest1.bigmachines.com/bmfsweb/equinixinctest1/image/Icons/marker-circle.png',description:'AWS,GOOGLE,Microsoft,ORACLE,SAP,VERIZON',maintitle:'Washington, D.C.',SelectedCSPList:'',SelectedNSPList:'',NSP_DATA:'AT&T Business, Verizon, Vodafone Carrier Services, China Telecom, Orange Business Services, COLT TECHNOLOGY SERVICES, TATA COMMUNICATIONS LIMITED, NTT Communications, BT, TELXIUS',selectedMetro:'',metroCode:'DC'}];
+    </script>
+<script>zoomLevel=4;</script><script type='text/javascript' src='us.js'></script><script type='text/javascript' src='MetroMain.js'></script><script type='text/javascript'>console.log('Rule working..!');</script><script type='text/javascript'>console.log(location);</script>
+<script type='text/javascript' src='specificMetro.js'></script>
+<script>
+//var curBaseUrl = 'https://ankuraggarwalcotest1.bigmachines.com/bmfsweb/ankuraggarwalcotest1/image/';
+function cpqUpdateMetroJS(user,index){
+    console.log(user);
+    $('#lastMetroSelection').val(index);
+    window.localStorage.setItem('EquinixMetro', 'Obaseki Nosa');
+}
+var systemMetroVal = "";
+//var systemMetroVal = CPQJS.getAttributeVal('metros_Final');
+if(document.getElementById('dispMetroJS'))
+{
+    setMetroCodeBack(systemMetroVal);
+}
+$("#saveBtn").attr("disabled", true).attr('style','opacity:0.4');
+
+$("#saveBtn").attr("disabled", false).attr('style','opacity:1');
+</script>
+<script>
+
+    /*CSS related snippet */
+var UID = {
+	_current: 0,
+	getNew: function(){
+		this._current++;
+		return this._current;
+	}
+};
+
+HTMLElement.prototype.pseudoStyle = function(element,prop,value){
+	var _this = this;
+	var _sheetId = "pseudoStyles";
+	var _head = document.head || document.getElementsByTagName('head')[0];
+	var _sheet = document.getElementById(_sheetId) || document.createElement('style');
+	_sheet.id = _sheetId;
+	var className = "pseudoStyle" + UID.getNew();
+	
+	_this.className +=  " "+className; 
+	
+	_sheet.innerHTML += " ."+className+":"+element+"{"+prop+":"+value+"}";
+	_head.appendChild(_sheet);
+	return this;
+};
+</script>
+</html>
+

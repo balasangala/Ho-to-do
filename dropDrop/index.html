@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .sg-jardiance-wrapper {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        /* slider css */
+
+        .slidecontainer {
+            width: 100%;
+        }
+
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 35px;
+            border-radius: 18px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        /* .slider:hover {
+            opacity: 1;
+        } */
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .label-container {
+  margin-top: 0.5rem;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position : relative;
+}
+
+
+
+.label-item {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  position: absolute;
+}
+
+.label-item:nth-child(1) {
+  left:0;
+}
+
+.label-item:nth-child(2) {
+  left:9%;
+  /* transform: translateX(-10%); */
+
+}
+
+.label-item:nth-child(3) {
+  left:19%;
+  /* transform: translateX(-20%); */
+}
+
+.label-item:nth-child(4) {
+  left: 29%;
+  /* transform: translateX(-30%); */
+}
+
+.label-item:nth-child(5) {
+    left: 39%;
+  /* transform: translateX(-40%); */
+}
+.label-item:nth-child(6) {
+    left: 48.5%;
+    /* transform: translateX(-50%); */
+}
+.label-item:nth-child(7) {
+    left: 58.5%;
+    /* transform: translateX(-60%); */
+}
+.label-item:nth-child(8) {
+    left: 68%;
+    /* transform: translateX(-70%); */
+}
+.label-item:nth-child(9) {
+    left: 77.7%;
+    /* transform: translateX(-80%); */
+}
+.label-item:nth-child(10) {
+    left: 87.5%;
+    /* transform: translateX(-90%); */
+}
+.label-item:nth-child(11) {
+    left: 97%;
+    /* transform: translateX(-100%); */
+}
+
+
+.line-container {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position : relative;
+
+}
+.line-item {
+    position: absolute;
+    height: 35px;
+}
+
+/* .line-item:nth-child(1) {
+  left:0;
+  border-right: 1px solid #000;
+} */
+.line-item:nth-child(2) {
+  left:10%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(3) {
+  left:20%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(4) {
+  left:30%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(5) {
+  left:40%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(6) {
+  left: 49.5%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(7) {
+  left: 59.5%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(8) {
+  left: 69%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(9) {
+  left: 78.7%;
+  border-right: 1px solid #000;
+}
+.line-item:nth-child(10) {
+  left: 88.5%;
+  border-right: 1px solid #000;
+}
+.range-container {
+    position: relative;
+}
+#range-value {
+    position: absolute;
+}
+
+
+        /* slider css end*/
+        .footer .footer-list {
+            list-style: none;
+            padding: 0;
+            float: left;
+
+
+        }
+
+        .footer .footer-list li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .footer .logo {
+            float: right;
+        }
+
+        .popup-bg {
+            background-color: gray;
+            padding: 50px;
+            display: none;
+            position: absolute;
+            top: 0;
+            width: 1024px;
+        }
+
+        .popup-bg .popu-container {
+            border: 1px solid red;
+            padding: 50px;
+        }
+
+        .popup-bg .popu-container .close-btn {
+            float: right;
+            width: 30px;
+            height: 30px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sg-jardiance-wrapper">
+        <div class="container">
+            <h3>For your patients with CV disease and type 2 diabetes<sup>*</sup></h3>
+            <h1>How SOON could you reduce the <br />risk of CV death with JARDIANCE?<sup>1</sup></h1>
+            <div class="range-container"><span id="range-value"></span></div>
+            <div class="content">
+                
+                <div class="line-container">
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                  </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="0" class="slider" id="myRange">  
+                </div>
+                
+                  <div class="label-container">
+                    <div class="label-item">Day</div>
+                    <div class="label-item">10</div>
+                    <div class="label-item">20</div>
+                    <div class="label-item">30</div>
+                    <div class="label-item">40</div>
+                    <div class="label-item">50</div>
+                    <div class="label-item">60</div>
+                    <div class="label-item">70</div>
+                    <div class="label-item">80</div>
+                    <div class="label-item">90</div>
+                    <div class="label-item">100</div>
+                  </div>
+            </div>
+                
+            </div>
+            <div class="footer">
+                <ul class="footer-list">
+                    <li>Footnote and reference</li>
+                    <li>Safety information</li>
+                    <li>Indication</li>
+                </ul>
+                <div class="logo">
+                    logo
+                </div>
+
+                <div class="popup-bg">
+                    <div class="popu-container">
+                        <div class="close-btn">X</div>
+                        pop up content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            $(".footer .footer-list li").click(function () {
+                $('.popup-bg').show();
+            });
+            $(".close-btn").click(function () {
+                $('.popup-bg').hide();
+            });
+        });
+
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("range-value");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+            var value = (this.value - this.min) / (this.max - this.min) * 100;
+            console.log(value)
+            var  newPosition = 10 - (value * 0.2);
+           output.innerHTML = "<span>" + Math.ceil(value) + "</span>";
+           output.style.left = "calc(" + value + "% + (" + newPosition + "px))";
+            this.style.background = 'linear-gradient(to right, #F7D708 0%, #F7D708 ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)'
+           
+        }
+
+
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>
